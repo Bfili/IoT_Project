@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">IoT Manager</string>
+    <string name="menu_plant_desc">menu_Plant_Image</string>
+    <string name="start_text">Start</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="moja_roslina">Moja roślina</string>
+    <string name="kamera">Kamera</string>
+    <string name="podlewanie">Podlewanie</string>
+    <string name="info">Info</string>
+    <string name="information_about_app">Informacje o aplikacji</string>
+    <string name="temperature_menu_text">Temperatura</string>
+    <string name="your_plant_title">Twoja Roślina</string>
+    <string name="plant_hint">Podaj gatunek rośliny</string>
+    <string name="plant_type_text">Gatunek Rośliny</string>
+    <string name="done_button_plant_type_text">zatwierdź</string>
+    <string name="done_button_plant_temperature_text">zatwierdź</string>
+    <string name="change_plan_name_button_text">zmień</string>
+    <string name="change_plant_temperature_button_text">zmień</string>
+    <string name="temperature_text">25,00</string>
+    <string name="change_temperature_text_string">Optymalna Temperatura</string>
+    <string name="zero_placeholder_text">0</string>
+    <string name="temperature_sensor_text">Czujnik Temperatury</string>
+    <string name="temperature_reading_text">0.0</string>
+    <string name="is_temperature_good_text">Czy temperatura jest dobra?</string>
+    <string name="watering_title">Ustaw przypomnienie o podlewaniu</string>
+    <string name="add_calendar_title">Podaj nazwę wydarzenia</string>
+    <string name="add_calendar_description">Podaj ilość wody</string>
+    <string name="watering_button_done">Zatwierdź</string>
+    <string name="startButtonText">Start</string>
+    <string name="stopButtonText">Stop</string>
+</resources>

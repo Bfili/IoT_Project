@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainmenuconstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="413dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/titleTextID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odczyt wejść i wyjść użytkownika"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <TableRow
+                android:background="#51B435"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No." />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Temperatura" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Ciśnienie" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Wilgotność" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Orientacja" />
+            </TableRow>
+
+        </TableLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="408dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/buttonStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Załaduj dane"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="392dp"
+            android:layout_height="380dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+            <TableLayout
+                android:id="@+id/measTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TableLayout>
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/buttonconstraint"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+
+<!--        <TableLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:paddingLeft="5dp"-->
+<!--            android:paddingRight="5dp">-->
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#F0F7F7"-->
+<!--            android:padding="5dp">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonInvis1"-->
+<!--                android:layout_width="62dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="invisible" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonStart"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Start" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonInvis2"-->
+<!--                android:layout_width="49dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="invisible" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonStop"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Stop" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonInvis3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="invisible" />-->
+<!--        </TableRow>-->
+<!--        </TableLayout>-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/mainmenuconstraint"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:paddingLeft="5dp"-->
+<!--            android:paddingRight="5dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/titleTextID"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Odczyt wejść i wyjść użytkownika"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold">-->
+
+<!--            </TextView>-->
+
+
+<!--            <TableRow android:background="#51B435" android:padding="10dp">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Wielkość" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Wartość" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Jednostka" />-->
+<!--            </TableRow>-->
+<!--            <TableRow android:background="#F0F7F7" android:padding="5dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="temperatura" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tempVal"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tempUnit"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+<!--            </TableRow>-->
+<!--            <TableRow android:background="#F0F7F7" android:padding="5dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="wilgotność" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/humVal"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/humUnit"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+<!--            </TableRow>-->
+<!--            <TableRow android:background="#F0F7F7" android:padding="5dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="ciśnienie" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/preVal"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/preUnit"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+<!--            </TableRow>-->
+
+<!--            <TableRow android:background="#F0F7F7" android:padding="5dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="kąt roll" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/rollVal"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/rollUnit"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+<!--            </TableRow>-->
+
+<!--            <TableRow android:background="#F0F7F7" android:padding="5dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="kąt pitch" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/pitchVal"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/pitchUnit"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+<!--            </TableRow>-->
+
+<!--            <TableRow android:background="#F0F7F7" android:padding="5dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="kąt yaw" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/yawVal"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/yawUnit"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1" />-->
+<!--            </TableRow>-->
+
+<!--            <TableRow-->
+<!--                android:layout_height="28dp"-->
+<!--                android:background="#F0F7F7"-->
+<!--                android:padding="5dp">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/buttonInvis1"-->
+<!--                    android:layout_width="62dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:visibility="invisible" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/buttonStart"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Start" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/buttonInvis2"-->
+<!--                    android:layout_width="49dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:visibility="invisible" />-->
+<!--                <Button-->
+<!--                    android:id="@+id/buttonStop"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Stop" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/buttonInvis3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:visibility="invisible" />-->
+<!--            </TableRow>-->
+
+
+<!--        </TableLayout>-->
+
+
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+</layout>

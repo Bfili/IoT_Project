@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.grow_me_v1_0.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.grow_me_v1_0.Menu"
+        android:label="Menu"
+        tools:layout="@layout/main_menu_fragment">
+        <action
+            android:id="@+id/action_menu_to_adderFragment"
+            app:destination="@id/adderFragment" />
+        <action
+            android:id="@+id/action_menu_to_temperatureFragment2"
+            app:destination="@id/temperatureFragment2" />
+        <action
+            android:id="@+id/action_menu_to_wateringFragment"
+            app:destination="@id/wateringFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.grow_me_v1_0.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/adderFragment"
+        android:name="com.example.grow_me_v1_0.AdderFragment"
+        android:label="fragment_adder"
+        tools:layout="@layout/fragment_adder" >
+        <argument
+            android:name="temp_argument"
+            app:argType="float"
+            android:defaultValue="0.0" />
+    </fragment>
+    <fragment
+        android:id="@+id/temperatureFragment2"
+        android:name="com.example.grow_me_v1_0.TemperatureFragment"
+        android:label="TemperatureFragment"
+        tools:layout="@layout/fragment_temperature"/>
+    <fragment
+        android:id="@+id/wateringFragment"
+        android:name="com.example.grow_me_v1_0.WateringFragment"
+        android:label="WateringFragment"
+        tools:layout="@layout/fragment_watering"/>
+
+</navigation>
